@@ -1,7 +1,7 @@
 {
   "java.compile.nullAnalysis.mode": "automatic",
-  "dart.flutterHotReloadOnSave": "allIfDirty",
-  "dart.hotReloadOnSave": "manualIfDirty",
+  "dart.flutterHotReloadOnSave": "manual",
+  "dart.hotReloadOnSave": "never",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500
 }

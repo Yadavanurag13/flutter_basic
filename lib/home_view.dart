@@ -13,11 +13,52 @@ class HomeView extends StatelessWidget {
         ),
         backgroundColor: Colors.amber,
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(30.0),
-        child: Text('Hello World'),
-        //we can not apply color property in paddling class
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: const Text('one'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(30.0),
+            color: Colors.red,
+            child: const Text('one'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(40.0),
+            color: Colors.blue,
+            child: const Text('one'),
+          ),
+        ],
       ),
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: [
+      //     const Text('Hello World'),
+      //     const TextButton(
+      //       onPressed: null,
+      //       style: ButtonStyle(
+      //         backgroundColor: MaterialStatePropertyAll(Colors.amber),
+      //         foregroundColor: MaterialStatePropertyAll(Colors.black),
+      //       ),
+      //       child: Text('Anurag'),
+      //     ),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: const EdgeInsets.all(30.0),
+      //       child: const Text('Inside container'),
+      //     ),
+      //   ],
+      // ),
+      //   const Padding(
+      //   padding: EdgeInsets.all(30.0),
+      //   child: Text('Hello World'),
+      //   //we can not apply color property in paddling class
+      // ),
       //   Container(
       //   padding: const EdgeInsets.fromLTRB(30.0, 15.0 , 30.0, 15.0),
       //   //EdgeInsets.all(20.0),
