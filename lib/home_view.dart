@@ -13,24 +13,35 @@ class HomeView extends StatelessWidget {
         ),
         backgroundColor: Colors.amber,
       ),
-      body: Column(
+      body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            padding: const EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: const Text('one'),
+          Expanded(
+            flex: 2,
+            child: Image.asset('assets/anurag.jpeg'),
           ),
-          Container(
-            padding: const EdgeInsets.all(30.0),
-            color: Colors.red,
-            child: const Text('one'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: const EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: const Text('1'),
+            ),
           ),
-          Container(
-            padding: const EdgeInsets.all(40.0),
-            color: Colors.blue,
-            child: const Text('one'),
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.all(30.0),
+              color: Colors.red,
+              child: const Text('2'),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.all(30.0),
+              color: Colors.blue,
+              child: const Text('3'),
+            ),
           ),
         ],
       ),
